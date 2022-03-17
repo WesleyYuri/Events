@@ -45,6 +45,16 @@ footer p {
     border: 2px solid #C28008;
 }
 
+.msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6C8;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 /* navbar */
 #navbar img {
     width: 75px;
@@ -137,3 +147,20 @@ footer p {
     color: #757575;
 }
 /* Event list */
+
+/* Event página de criação */
+#event-create-container {
+    padding: 30px;
+}
+
+#event-create-container label {
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+/* Event página de criação */
