@@ -201,4 +201,13 @@ footer p {
 #info-container #event-submit {
     margin: 20px 0;
 }
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#items-list li {
+    display: flex;
+}
 /* Event page*/
