@@ -186,6 +186,10 @@ footer p {
     display: flex;
 }
 
+#description-container {
+    margin-top: 30px;
+}
+
 #info-container h3,
 #description-container h3 {
     font-size: 20px;
@@ -211,3 +215,23 @@ footer p {
     display: flex;
 }
 /* Event page*/
+
+/* Dashboard*/
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th {
+    width: 25%;
+}
+
+.dashboard-events-container #event_title {
+    color: #F2A340;
+    text-decoration: none;
+}
+
+.dashboard-events-container #event_title:hover {
+    color: #C28008;
+}
+/* Dashboard*/
