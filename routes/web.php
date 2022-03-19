@@ -21,4 +21,4 @@ Route::get('/events/cadastrar', [EventController::class, 'cadastrar']);
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 Route::post('/events', [EventController::class, 'store']);
-
+Route::delete('/events/{id}', [EventController::class, 'destroy']);

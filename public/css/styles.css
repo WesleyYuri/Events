@@ -234,4 +234,8 @@ footer p {
 .dashboard-events-container #event_title:hover {
     color: #C28008;
 }
+
+.dashboard-events-container form {
+    display: inline-block;
+}
 /* Dashboard*/
