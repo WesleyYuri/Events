@@ -15,8 +15,12 @@ use App\Http\Controllers\EventController;
 */
 
 Route::get('/', [EventController::class, 'index']);
-Route::get('/events/criar', [EventController::class, 'criar']);
+Route::get('/events/criar', [EventController::class, 'criar'])->middleware('auth');
 Route::get('/events/entrar', [EventController::class, 'entrar']);
 Route::get('/events/cadastrar', [EventController::class, 'cadastrar']);
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::post('/events', [EventController::class, 'store']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
