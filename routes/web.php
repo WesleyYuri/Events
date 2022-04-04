@@ -21,4 +21,6 @@ Route::get('/events/cadastrar', [EventController::class, 'cadastrar']);
 Route::get('/events/{id}', [EventController::class, 'show']);
 Route::get('/dashboard', [EventController::class, 'dashboard'])->middleware('auth');
 Route::post('/events', [EventController::class, 'store']);
-Route::delete('/events/{id}', [EventController::class, 'destroy']);
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
+Route::get('/events/editar/{id}', [EventController::class, 'edit'])->middleware('auth');
+Route::put('/events/update/{id}', [EventController::class, 'update'])->middleware('auth');
